@@ -4,14 +4,54 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #555; }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 40px;
+  line-height: 0.5;
+  color: lightsalmon;
+  background-image: url(red-velvet-cupcake-lge.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 1500px 800px; 
+ 
+}
 
+
+}
+ul{
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+
+
+}
+li{
+	display: inline-block;
+	color: lightsalmon;
+}
+a{
+	float: left;
+    width: 4em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: bisque;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+    
+}
+a:hover {
+    background-color: coral;
+    
+}
   h1{
   	text-align: center;
+  	    
   	  }
-  h2{
-  	text-align: center;
-  }
+
+
+ 
