@@ -3,29 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <title>Our Website</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    
+
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+var marker;
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Sweet recipies </h1>
-      <h2 class="project-tagline"></h2>
-    </section>
 
-    <section class="main-content">
-  <ul>
+   <div class "page-header" >
+      <h1 class="project-name">Crumbs of inspiration</h1>
+</div>
+
+    <div class ="main-content">
+  <ul class = "nav">
   <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
   <li><a href="contact.asp">Contact</a></li>
   <li><a href="about.asp">About</a></li>
+  <li><a href="more.asp">More</a></li>
 </ul>
 
-    </section>
-
+</div>
+<div class ="image1">
+  <a target = "_blank" href ="http://www.yourcupofcake.com/wp-content/uploads/2013/01/Red-Velvet-Cupcakes.jpg"> 
+    <img src= "http://www.yourcupofcake.com/wp-content/uploads/2013/01/Red-Velvet-Cupcakes.jpg" alt "Cupcakes" width = "80" height = "90" > </a>
+    <div class = "desc"> Add a description here </div>
+  
+</div>
+<div id="googleMap" style="width:200px;height:200px;"></div>
   
   </body>
 </html>
