@@ -2,24 +2,98 @@
   box-sizing: border-box; }
 
 body {
+  width: 100%;
   padding: 0;
-  margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 40px;
+  margin: 10px;
+  resize: horizontal;
+  overflow: auto;
+  font-size: 20px;
   line-height: 0.5;
   color: lightsalmon;
-  background-image: url(red-velvet-cupcake-lge.jpg);
+  background-image: url(cupcake_background.jpg);
+  font-family: "Brush Script MT",cursive;
+
   
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 1500px 800px; 
+  background-size: 1100px 800px; 
+  background-color: beige;
  
 }
 
 
 }
-ul{
+div.main-content nav{
+
+
+   float: left;
+  list-style: none;
+  margin: 0;
+  padding: 1px;
+  font-size: 12px;
+  text-align: center;
+}
+.nav li {
+  display: inline;
+
+}
+
+
+.nav a:link{
+  display: inline;
+  padding: 5px;
+  width: 120px;
+  color: lightsalmon;
+  background-color: beige;
+  border-right:5px solid white;
+}
+
+.nav a:hover{
+  background-color: lightsalmon;
+  font-family: 150%;
+}
+
+    }
+
+    div.image1{
+      margin: 5px;
+      padding: 5px;
+     
+      
+     
+      float: left;
+      text-align: center;
+
+    }
+    div.image1 img{
+      display: inline;
+       height: 250px;
+      width: 200px;
+      margin: 10px;
+      border: 1px solid lightsalmon;
+      position: absolute;
+      left: 1100px;
+      top: 50px;
+      
+    }
+    div.image1 a:hover img{
+      border : 10px solid black;
+    }
+div.desc{
+  text-align: center;
+  font-weight: normal;
+  padding: 5px;
+  width: 250px;
+  height: 300px;
+  left: 1050px;
+  top: 70px;
+  margin: 5px;
+  border: 2px solid black;
+  position: relative;
+  
+}
+/*ul{
 	float: left;
 	list-style-type: none;
 	margin: 0;
@@ -45,10 +119,11 @@ a{
     
 }
 a:hover {
-    background-color: coral;
+    background-color: coral;*/
     
 }
-  h1{
+  .project-name {
+
   	text-align: center;
   	    
   	  }
