@@ -2,15 +2,10 @@
   box-sizing: border-box; }
 
 
-@media only screen and (max-width: 768px) {
-    .box {
-        border: 5px solid blue;
-    }
-}
 
 body {
 
-  max-width: 768px;
+  width: 100%;
   padding:5px;
   margin: 5px;
  
@@ -28,6 +23,12 @@ body {
   background-size: 1100px 800px; 
   background-color: beige;
  
+}
+.text{
+  position: relative;
+  font-size: 40px;
+  left: 250px;
+  bottom: 250px;
 }
 
 
@@ -131,11 +132,32 @@ form {
   position: absolute;
 }
 
-.button1
-{
+
+.recipie-title1{
+  position: relative;
+  left: 850px;
+  bottom: 200px;
+}
+
+
+.recipie-title2{
+ position: relative;
+  left: 1050px;
+  bottom:270px;
+}
+
+.recipie-title3{
+  position: relative;
+  left: 1000px;
+  bottom: 0px;
+}
+
+
+
+.button1{
   position: relative;
   left:1070px;
-  top:-20px;
+  bottom:675px;
   border-radius: 4px;
   background-color: brown;
   border:none;
@@ -174,7 +196,7 @@ form {
 {
   position: relative;
   left:625px;
-  top:-20px;
+  bottom: 675px;
   border-radius: 4px;
   background-color: brown;
   border:none;
@@ -214,7 +236,7 @@ form {
 {
   position: relative;
   left:580px;
-  bottom:-225px;
+  bottom:400px;
   border-radius: 4px;
   background-color: brown;
   border:none;
@@ -248,11 +270,3 @@ form {
   opacity: 1;
   right: 0;
 }
-
-.recipie-title1{
-  position: relative;
-  left: 700px;
-  bottom: 100px;
-}
-
-
