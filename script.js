@@ -1,25 +1,24 @@
 
+	var myCenter=new google.maps.LatLng(51.508742,-0.120850); /* Coordinates of London*/
+	var marker;
 
+	function initialize()  /* Function for google maps*/
+	{
+	var mapProp = {
+	  center:myCenter,
+	  zoom:2, /* Zoom settings*/
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
 
-var myCenter=new google.maps.LatLng(51.508742,-0.120850);
-var marker;
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:2,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+	var marker=new google.maps.Marker({
+	  position:myCenter,
+	  animation:google.maps.Animation.BOUNCE
+	  });
 
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	marker.setMap(map);
+	}
 
-var marker=new google.maps.Marker({
-  position:myCenter,
-  animation:google.maps.Animation.BOUNCE
-  });
+	google.maps.event.addDomListener(window, 'load', initialize);
 
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
