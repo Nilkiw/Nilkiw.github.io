@@ -8,45 +8,26 @@
     <title>Our Website</title>
 
   <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="css/mobile.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 
 
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script>
-var myCenter=new google.maps.LatLng(51.508742,-0.120850);
-var marker;
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:5,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+<script src="script.js"></script>
 
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var marker=new google.maps.Marker({
-  position:myCenter,
-  animation:google.maps.Animation.BOUNCE
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
   </head>
   <body>
 
    <div class "page-header" >
       <h1 class="project-name">Crumbs of inspiration</h1>
-</div>
-  
+
     <div class ="main-content">
   <ul class = "nav">
   <li><a href="default.asp">Home</a></li>
@@ -56,6 +37,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </ul>
 
 </div>
+
+
 <div class ="image1">
   <a target = "_blank" href ="http://www.yourcupofcake.com/wp-content/uploads/2013/01/Red-Velvet-Cupcakes.jpg"> 
     <img src= "http://www.yourcupofcake.com/wp-content/uploads/2013/01/Red-Velvet-Cupcakes.jpg" alt "RedvelvetCupcakes" width = "80" height = "90"> </a>
@@ -74,10 +57,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-<div id="googleMap" style="width:200px;height:200px;"position="bottom"></div>
+<div id="googleMap" style="width:150px;height:150px;"></div>
 <form>
  <input type="text" placeholder="search..." required>
  <input type="button" value="Search">
 </form>
+
+<button class = "button1" > <span> Click for Recipie </span> </button>
+<button class = "button2" > <span> Click for Recipie </span> </button>
+<button class = "button3" > <span> Click for Recipie </span> </button>
+
+</div>
+  <div class = "recipie-titles">
+    <h3 class = "recipie-title1" > Vanilla delight... </h3>
+    <h3 class = "recipie-title2" > Red Velvet magic.. </h3>
+    <h3 class = "recipie-title3" > Chocolate tempation </h3>
+  </div>
+
   </body>
 </html>
